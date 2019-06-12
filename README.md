@@ -8,9 +8,15 @@ The training is all about internet of things so we need a project in mind to see
 ## Table of Contents
 ### Processors, controllers.. hardware.
 ### ESP32 & Tools
-### ESP8266
-### Firmware
-### Connectivity
-### Cloud and Platforms
-### OTA
+### Setting up enviroment for Linux
+### Micropython Examples
+1. [led]()
+2. [button]()
+3. [ADC]()
+4. [PWM]()
 
+### C/C++ Examples
+1. [led]()
+2. [button]()
+3. [ADC]()
+4. [PWM]()
