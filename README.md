@@ -7,8 +7,17 @@ The training is all about internet of things so we need a project in mind to see
 
 ## Table of Contents
 ### Processors, controllers.. hardware.
+    
 ### ESP32 & Tools
+    
 ### Setting up enviroment for Linux
+    1. [Install Visual Studio Code] (https://code.visualstudio.com/download "VSC Download")
+    2. [Install PlatfromIO IDE for VSC] (https://platformio.org/install/ide?install=vscode "PlatformIO IDE")
+    3. [Install Micropython IDE for VSC] (https://marketplace.visualstudio.com/items?itemName=dphans.micropython-ide-vscode "Micropython IDE")
+    4. [Install Pymakr] (https://marketplace.visualstudio.com/items?itemName=pycom.Pymakr "Pymakr install")
+    5. [Install Python] (https://marketplace.visualstudio.com/items?itemName=ms-python.python "Python install")
+       [Python prerequisites] (https://code.visualstudio.com/docs/python/python-tutorial#_prerequisites "Python prerequisites")
+    6. Add user to dialout group
 ### Micropython Examples
 1. [led]()
 2. [button]()
