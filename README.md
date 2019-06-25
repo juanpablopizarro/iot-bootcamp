@@ -41,7 +41,6 @@ If you press the ENABLE button, it reboots your ESP32. If you hold down the BOOT
 5. [Python prerequisites](https://code.visualstudio.com/docs/python/python-tutorial#_prerequisites "Python prerequisites")
 6. [Install Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python "Python Install")
 7. Add user to dialout group: 'sudo usermod -a -G dialout $USER'
-If your don't have the sudo user, contact Service Desk and ask them to add your user to that group.
     
 ### Micropython Examples
 1. [led]()
