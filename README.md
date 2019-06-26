@@ -14,7 +14,7 @@ Microprocessor is an integrated circuit which has only the CPU inside them. Thes
  
 But this is not the case with Microcontrollers. Microcontroller has a CPU, in addition with a fixed amount of RAM, ROM and other peripherals all embedded on a single chip. At times it is also termed as a mini computer or a computer on a single chip. Today different manufacturers produce microcontrollers with a wide range of features available in different versions. Some manufacturers are ATMEL, Microchip, TI, Freescale, Philips, Motorola etc. 
  
-Microcontrollers are designed to perform specific tasks. Specific means applications where the relationship of input and output is defined. Depending on the input, some processing needs to be done and output is delivered. For example, keyboards, mouse, washing machine, digicam, pendrive, remote, microwave, cars, bikes, telephone, mobiles, watches, etc. Since the applications are very specific, they need small resources like RAM, ROM, I/O ports etc and hence can be embedded on a single chip. This in turn reduces the size and the cost.
+Microcontrollers are designed to perform specific tasks. Specific means applications where the relationship of input and output is defined. Depending on the input, some processing needs to be done and output is delivered. For example, keyboards, mouse, washing machine, digicam, pendrive, cars, bikes, telephone, mobiles, watches, etc. Since the applications are very specific, they need small resources like RAM, ROM, I/O ports etc and hence can be embedded on a single chip. This in turn reduces the size and the cost.
 
 ### ESP32 & Tools
 The ESP32 Board is the ESP8266 successor, loaded with lots of new features. It has Wi-Fi and Bluetooth wireless capabilites. There are many ESP32 development boards, we will focus on the ESP32 DOIT DEVKIT V1 Board.
@@ -53,6 +53,21 @@ If you press the ENABLE button, it reboots your ESP32. If you hold down the BOOT
 ### Micropython Examples
 
 #### Led Example
+This project consists of simply blinking the ESP32 on-board LED. The on-board LED corresponds to GPIO 2. 
+This project works as follows: 
+- First, the LED turns on for 1 second. GPIO 2 set to HIGH.
+- Second, the LED turns off for 1 second. GPIO 2 set to LOW.
+- The pattern continues until you exit the program.
+
+The code is as follows:
+```python
+from machine import Pin
+from time import sleep
+led = Pin(2,Pin.OUT)
+while True:
+ led.value(not led.value())
+ sleep(1)
+```
 #### Button Example
 #### ADC Example
 #### PWM Example
