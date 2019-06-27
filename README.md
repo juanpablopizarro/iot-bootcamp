@@ -50,7 +50,7 @@ If you press the ENABLE button, it reboots your ESP32. If you hold down the BOOT
 6. [Install Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python "Python Install")
 7. Add user to dialout group: 'sudo usermod -a -G dialout $USER'
     
-### Micropython Examples
+### Examples
 
 #### Led Example
 This project consists of simply blinking the ESP32 on-board LED. The on-board LED corresponds to GPIO 2. 
@@ -59,7 +59,7 @@ This project works as follows:
 - Second, the LED turns off for 1 second. GPIO 2 set to LOW.
 - The pattern continues until you exit the program.
 
-The code is as follows:
+The code in python is as follows:
 ```python
 from machine import Pin
 from time import sleep
@@ -69,6 +69,23 @@ while True:
  sleep(1)
 ```
 Save it as "main.py" and upload it to the ESP32 board.
+
+The code in c++ is as follows:
+```cpp
+#define LED 2
+ 
+void setup() {
+  // Set pin mode
+  pinMode(LED,OUTPUT);
+}
+ 
+void loop() {
+  delay(1000);
+  digitalWrite(LED,HIGH);
+  delay(1000);
+  digitalWrite(LED,LOW);
+}
+```
 
 #### Button Example
 
@@ -95,13 +112,23 @@ while True:
 ```
 Save it as "main.py" and upload it to the ESP32 board.
 
-#### ADC Example
-#### PWM Example
-#### Wifi Example
+The code is c++ is as follows:
 
-### C/C++ Examples
-#### Led Example
-#### Button Example
+```cpp
+#define LED 5
+#define BUTTON 4
+
+void setup() {
+  pinMode(LED,OUTPUT);
+  pinMode(BUTTON,INPUT);
+}
+
+void loop() {
+  digitalWrite(LED,digitalRead(BUTTON));
+  delay(1);
+}
+```
+
 #### ADC Example
 #### PWM Example
 #### Wifi Example
