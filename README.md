@@ -100,7 +100,7 @@ In order to build the circuit you will need:
 - A pushbutton
 - 10 KOhm resistor
 
-The code is as follows:
+The code in python is as follows:
 ```python
 from machine import Pin
 from time import sleep
