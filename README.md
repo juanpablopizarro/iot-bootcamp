@@ -112,7 +112,7 @@ while True:
 ```
 Save it as "main.py" and upload it to the ESP32 board.
 
-The code is c++ is as follows:
+The code in c++ is as follows:
 
 ```cpp
 #define LED 5
