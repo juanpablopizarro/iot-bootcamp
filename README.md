@@ -100,7 +100,7 @@ In order to build the circuit you will need:
 - A pushbutton
 - 10 KOhm resistor
 
-The code is as follows:
+The code in python is as follows:
 ```python
 from machine import Pin
 from time import sleep
@@ -112,7 +112,7 @@ while True:
 ```
 Save it as "main.py" and upload it to the ESP32 board.
 
-The code is c++ is as follows:
+The code in c++ is as follows:
 
 ```cpp
 #define LED 5
