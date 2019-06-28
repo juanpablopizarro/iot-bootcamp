@@ -175,18 +175,17 @@ The bit argument can be one of the following parameters:
 
 The code in c++ is as follows:
 ```cpp
-#define ADC 34
- 
+#include <driver/adc.h>
+
 void setup() {
-  // Set pin mode
-  pinMode(LED,OUTPUT);
+  adc1_config_width(ADC_WIDTH_BIT_12);
+  adc1_config_channel_atten(ADC1_CHANNEL_6,ADC_ATTEN_DB_11);
 }
- 
+
 void loop() {
-  delay(1000);
-  digitalWrite(LED,HIGH);
-  delay(1000);
-  digitalWrite(LED,LOW);
+  int val = adc1_get_raw(ADC1_CHANNEL_6);
+  printf( "%i\n", val);
+  delay(10);
 }
 ```
 
