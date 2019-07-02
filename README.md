@@ -191,4 +191,21 @@ void loop() {
 
 
 #### PWM Example
+
+If you alternate an LED's voltage between HIGH and LOW very fast, your eyes can't keep up with the speed at which the LED switches on and off; you will simply see some gradations in brightness.
+
+That's basically how PWM works, by producing an output that changes between HIGH and LOW at a very high frequency. The duty cycle is the fraction of the time period at which the LED is set to HIGH.
+
+![PWM]()
+
+That means, a duty cycle of 50 percent results in 50 percent LED brightness, a duty cycle of 0 means the LED is fully off, and a duty cycle of 100 means the LED is fully on. Changing the duty cycle is how you produce different levels of brightness.
+
+This project consists to control the PWM duty cycle with a potentiometer through the ADC.
+
+You will need:
+- 5mm LED
+- 330 Ohm resistor
+- Potentiometer
+
+
 #### Wifi Example
