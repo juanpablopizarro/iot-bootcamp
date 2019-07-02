@@ -196,7 +196,7 @@ If you alternate an LED's voltage between HIGH and LOW very fast, your eyes can'
 
 That's basically how PWM works, by producing an output that changes between HIGH and LOW at a very high frequency. The duty cycle is the fraction of the time period at which the LED is set to HIGH.
 
-![PWM]()
+![PWM](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/images/esp32_pwm.png)
 
 That means, a duty cycle of 50 percent results in 50 percent LED brightness, a duty cycle of 0 means the LED is fully off, and a duty cycle of 100 means the LED is fully on. Changing the duty cycle is how you produce different levels of brightness.
 
@@ -207,5 +207,28 @@ You will need:
 - 330 Ohm resistor
 - Potentiometer
 
+![PWM ADC Example]()
+
+The code in python is as follows:
+```python
+from machine import Pin, ADC, PWM
+from time import sleep
+
+frequency = 5000
+led = PWM(Pin(5),frequency)   #Define frequency of the PWM signal and create a PWM object called led on GPIO 5
+pot = ADC(Pin(34))            #Create ADC object called pot on GPIO 34
+pot.width(ADC.WIDTH_10BIT)    #Set analog reading to 10bit resolution to match the PWM duty cycle
+pot.atten(ADC.ATTN_11DB)      #Full range: 3.3V
+
+while True:
+ pot_value = pot.read()       #Read  the pot value and save it in the pot_value variable
+ print(pot_value)             #Print the value on the shell
+ if pot_value < 15:
+  led.duty(0)
+ else:
+  led.duty(pot_value)
+  
+ sleep(0.1)                    #Add delay of 100ms
+```
 
 #### Wifi Example
