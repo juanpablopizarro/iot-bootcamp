@@ -230,6 +230,41 @@ while True:
   
  sleep(0.1)                    #Add delay of 100ms
 ```
+
+The code in c++ is as follows:
+
+```cpp
+#include <driver/adc.h>
+
+// the number of the LED pin
+const int ledPin = 15;  
+
+const int freq = 5000;
+const int ledChannel = 0;
+const int resolution = 10;
+
+void setup() {
+  adc1_config_width(ADC_WIDTH_BIT_10);
+  adc1_config_channel_atten(ADC1_CHANNEL_6,ADC_ATTEN_DB_11);
+  ledcSetup(ledChannel, freq, resolution);                      // configure LED PWM functionalitites
+  ledcAttachPin(ledPin, ledChannel);                            // attach the channel to the GPIO to be controlled  
+}
+
+void loop() {
+  int val = adc1_get_raw(ADC1_CHANNEL_6);
+  printf( "%i\n", val);
+  if (val < 15)
+  {
+    ledcWrite(ledChannel, 0);
+  }
+  else
+  {
+    ledcWrite(ledChannel, val);
+  }
+  delay(10);
+}
+```
+
 Upload the code to the ESP32, you should be able to control the LED brightness by rotating the potentiometer and read the reading from the potentiometer on the shell.
 
 #### Wifi Example
