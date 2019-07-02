@@ -207,7 +207,7 @@ You will need:
 - 330 Ohm resistor
 - Potentiometer
 
-![PWM ADC Example]()
+![PWM ADC Example](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/images/esp32_pwm_adc_example.png)
 
 The code in python is as follows:
 ```python
@@ -230,5 +230,6 @@ while True:
   
  sleep(0.1)                    #Add delay of 100ms
 ```
+Upload the code to the ESP32, you should be able to control the LED brightness by rotating the potentiometer and read the reading from the potentiometer on the shell.
 
 #### Wifi Example
