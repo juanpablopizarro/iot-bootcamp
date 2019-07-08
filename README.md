@@ -329,3 +329,18 @@ void setup() {
 void loop() {}
 ```
 #### OTA Example
+
+The OTA Web Updater allows you to update/upload new code to your ESP32 using a browser, without the need to make a serial connection between the ESP32 and your computer.
+
+OTA programming is useful when you need to update code to ESP32 boards that are not easily accessible. The example here works when the ESP32 and your browser are on your local network.
+
+The only disadvantage of the OTA Web Updater is that you have to add the code for OTA in every sketch you upload, so that you’re able to use OTA in the future.
+
+How does OTA Web Updater Works?
+
+- The first sketch should be uploaded via serial port. This sketch should contain the code to create the OTA Web Updater, so that you are able to upload code later using your browser.
+- The OTA Web Updater sketch creates a web server you can access to upload a new sketch via web browser.
+- Then, you need to implement OTA routines in every sketch you upload, so that you’re able to do the next updates/uploads over-the-air.
+- If you upload a code without a OTA routine you’ll no longer be able to access the web server and upload a new sketch over-the-air.
+
+The ESP32 is prepared for OTA support by creating two data partitions.
