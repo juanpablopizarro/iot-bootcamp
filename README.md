@@ -597,8 +597,8 @@ For learning purposes let’s upload a new code that blinks an LED.
 #define LED 2
 
 const char* host = "esp32";
-const char* ssid = "REPLACE_WITH_YOUR_SSID";
-const char* password = "REPLACE_WITH_YOUR_PASSWORD";
+const char* ssid = "Your_ssid";
+const char* password = "Your_pass";
 
 WebServer server(80);
 
@@ -692,7 +692,7 @@ const char* serverIndex =
  * setup function
  */
 void setup(void) {
-  pinMode(led, OUTPUT);
+  pinMode(LED, OUTPUT);
   
   Serial.begin(115200);
 
@@ -766,6 +766,7 @@ void loop(void) {
   delay(1000);
   digitalWrite(LED,LOW);
   }
-}
 ```
 As you can see, we’ve added the “blinking led” code to the OTAWebUpdater code, so that we’re able to make updates later on.
+
+Now, you should see the on board led blinking.
