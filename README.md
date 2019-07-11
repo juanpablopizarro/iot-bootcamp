@@ -42,8 +42,21 @@ If you press the ENABLE button, it reboots your ESP32. If you hold down the BOOT
 
 ### Setting up enviroment for Linux
 
+IT IS NEEDED TO HAVE ADMIN RIGHTS FOR INSTALLING THE FOLLOWING PACKAGES.
+
 1. [Install Visual Studio Code](https://code.visualstudio.com/download "VSC Download")
+
+- Download the .deb file and save it to a known folder.
+- Double click on the downloaded .deb file and select install. 
+- It will take a moment until the program is installed.
+
 2. [Install PlatfromIO IDE for VSC](https://platformio.org/install/ide?install=vscode "PlatformIO IDE")
+
+- Open Visual Studio Code.
+- Go to the 'Extentions' section and search for 'Platformio'.
+- Press install and wait for the process to finish.
+- After that you should see the PlatformIO IDE extention.
+
 3. [Install Micropython IDE for VSC](https://marketplace.visualstudio.com/items?itemName=dphans.micropython-ide-vscode "Micropython IDE")
 4. [Install Pymakr](https://marketplace.visualstudio.com/items?itemName=pycom.Pymakr "Pymakr")
 5. [Python prerequisites](https://code.visualstudio.com/docs/python/python-tutorial#_prerequisites "Python prerequisites")
