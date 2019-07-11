@@ -48,9 +48,10 @@ IT IS NEEDED TO HAVE ADMIN RIGHTS FOR INSTALLING THE FOLLOWING PACKAGES.
 
 1. [Install Visual Studio Code](https://code.visualstudio.com/download "VSC Download")
 
+- Download the .deb file and save it to a known folder.
+
 ![VSC_1](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/images/Install_VSC_1.png)
 
-- Go to the link ubove and download the .deb file and save it to a known folder.
 - Double click on the downloaded .deb file and select install. 
 - It will take a moment until the program is installed.
 
