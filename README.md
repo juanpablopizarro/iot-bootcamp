@@ -44,6 +44,8 @@ If you press the ENABLE button, it reboots your ESP32. If you hold down the BOOT
 
 IT IS NEEDED TO HAVE ADMIN RIGHTS FOR INSTALLING THE FOLLOWING PACKAGES.
 
+#### Setting up enviroment for c++ develop
+
 1. [Install Visual Studio Code](https://code.visualstudio.com/download "VSC Download")
 
 - Download the .deb file and save it to a known folder.
@@ -56,6 +58,8 @@ IT IS NEEDED TO HAVE ADMIN RIGHTS FOR INSTALLING THE FOLLOWING PACKAGES.
 - Go to the 'Extentions' section and search for 'Platformio'.
 - Press install and wait for the process to finish.
 - After that you should see the PlatformIO IDE extention.
+
+#### Setting up enviroment for python develop
 
 3. [Install Micropython IDE for VSC](https://marketplace.visualstudio.com/items?itemName=dphans.micropython-ide-vscode "Micropython IDE")
 4. [Install Pymakr](https://marketplace.visualstudio.com/items?itemName=pycom.Pymakr "Pymakr")
