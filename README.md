@@ -48,6 +48,8 @@ IT IS NEEDED TO HAVE ADMIN RIGHTS FOR INSTALLING THE FOLLOWING PACKAGES.
 
 1. [Install Visual Studio Code](https://code.visualstudio.com/download "VSC Download")
 
+![VSC_1](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/images/esp32_button_example.png)
+
 - Download the .deb file and save it to a known folder.
 - Double click on the downloaded .deb file and select install. 
 - It will take a moment until the program is installed.
@@ -58,6 +60,7 @@ IT IS NEEDED TO HAVE ADMIN RIGHTS FOR INSTALLING THE FOLLOWING PACKAGES.
 - Go to the 'Extentions' section and search for 'Platformio'.
 - Press install and wait for the process to finish.
 - After that you should see the PlatformIO IDE extention.
+- Go to 'Platforms', search for 'Espressif 32' and install it.
 
 #### Setting up enviroment for python develop
 
