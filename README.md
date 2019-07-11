@@ -569,7 +569,7 @@ To test the OTA Web Updater you can disconnect the ESP32 from your computer and 
 
 Open a browser in your network and enter the ESP32 IP address. You should get the following:
 
-![ESP32_login](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/images/esp32_login.jpg)
+![ESP32_login](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/images/esp32-login.jpg)
 
 Enter the username and the password:
 
