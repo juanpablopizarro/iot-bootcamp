@@ -95,9 +95,14 @@ IT IS NEEDED TO HAVE ADMIN RIGHTS FOR INSTALLING THE FOLLOWING PACKAGES.
     
 ### Examples
 
-[LED Example] (https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/examples/Led%20Example/README.md)
+[LED Example](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/examples/Led%20Example/README.md)
+
 [Button Example](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/examples/Button%20Example/README.md)
+
 [ADC Example](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/examples/ADC%20Example/README.md)
+
 [PWM Example](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/examples/PWM%20Example/README.md)
+
 [Wifi Example](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/examples/WiFi%20Example/README.md)
+
 [OTA Example](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/examples/OTA%20Example/README.md)
