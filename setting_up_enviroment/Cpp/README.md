@@ -67,10 +67,9 @@
 
 - Ubuntu/Debian users may need to add own “username” to the “dialout” group if they are not “root”. 
 - Add user to dialout group: 'sudo usermod -a -G dialout $USER'
-                              'sudo usermod -a -G plugdev $USER'
+- Add user to plugdev group: 'sudo usermod -a -G plugdev $USER'
+- Add user to tty group: 'sudo usermod -a -G tty $USER'
                               
 - You will need to log out and log back in again (or reboot) for the user group changes to take effect.
 
-- 'sudo apt-get install esptool'
 
-- 'sudo usermod -a -G tty $USER'
