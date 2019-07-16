@@ -82,6 +82,12 @@ Reload Visual Studio Code and now Pymakr should work fine.
 
 ![Install_Pymakr1](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/images/Pymkr_Install.png)
 
+After successfuly installing Pymakr, add "Silicon Labs" to the pymakr.json file.
+
+![Install_Pymakr2](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/images/Pymakr_json_config.png)
+
+Now the board will be detected automatically.
+
 6. Check for the serial port that is being used: 'dmesg | grep tty'. In my case is /dev/ttyUSB0.
 
 ![Ports](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/images/Ports.png)
