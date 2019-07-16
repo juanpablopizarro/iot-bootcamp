@@ -59,14 +59,12 @@
 
 - It needs nodejs to be installed. Let's install it: 'sudo apt-get install nodejs'
 
-5. [Python prerequisites](https://code.visualstudio.com/docs/python/python-tutorial#_prerequisites "Python prerequisites")
-
-6. [Install Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python "Python Install")
+5. [Install Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python "Python Install")
 
 - Open Visual Studio Code, press Ctrl+P and write 'ext install ms-python.python' 
 
 - From within VS Code, select a Python 3 interpreter by opening the Command Palette (Ctrl+Shift+P), start typing the 'Python: Select Interpreter' command to search, then select the command.
 
-7. Add user to dialout group: 'sudo usermod -a -G dialout $USER'
+6. Add user to dialout group: 'sudo usermod -a -G dialout $USER'
 
-8. Check for the serial port that is being used: 'dmesg | grep tty'. In my case is /dev/ttyUSB0.
+7. Check for the serial port that is being used: 'dmesg | grep tty'. In my case is /dev/ttyUSB0.
