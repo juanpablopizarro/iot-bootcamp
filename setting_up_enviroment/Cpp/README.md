@@ -43,19 +43,33 @@
 
 - Download the corresponding linux file and save it.
 
+![Install_Driver_1](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/images/Install_Driver_1.png)
+
+![Install_Driver_2](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/images/Install_Driver_2.png)
+
+![Install_Driver_3](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/images/Install_Driver_3.png)
+
 - Go to the downloaded folder and unzip it.
 
 - Open a bash and navigate to the unziped folder.
 
+![Install_Driver_4](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/images/Install_Driver_4.png)
+
 - Once in the folder, write "make" and wait for the process to finish. Now you should see more files generated.
+
+![Install_Driver_5](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/images/Install_Driver_5.png)
 
 - Before the next step, write "uname -r" to display the version of your linux kernel. In my case it is "4.15.0-54-generic".
 
-- Now write: "sudo cp cp210x.ko /lib/modules/<kernel-version>/kernel/drivers/usb/serial". Enter your sudo password.
+- Now write: "sudo cp cp210x.ko /lib/modules/kernel-version/kernel/drivers/usb/serial". Enter your sudo password.
+  
+![Install_Driver_6](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/images/Install_Driver_6.png)
 
 - Connect the board to the usb and check if visual studio code can see the board. If not, continue with the next steps.
 
-- Then write "insmod /lib/modules/<kernel-version>/kernel/drivers/usb/serial/usbserial.ko"
+![Install_Driver_7](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/images/Install_Driver_7.png)
+
+- Then write "insmod /lib/modules/kernel-version/kernel/drivers/usb/serial/usbserial.ko"
 
 - Finally, "insmod cp210x.ko"
 
