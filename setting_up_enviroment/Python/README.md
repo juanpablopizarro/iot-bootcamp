@@ -45,13 +45,13 @@
 
 - Open Visual Studio Code, press Ctrl+P and write 'ext install dphans.micropython-ide-vscode'.
 
-- We will need to install some dependencies:
+- We will need to install some dependencies, open a bash and write the following commands line by line:
 
-- Python dependency: 'sudo add-apt-repository ppa:deadsnakes/ppa'
-                     'sudo apt-get update'
-                     'sudo apt-get install python3.7'
-- Pip dependency: 'curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py'
-                  'python get-pip.py --user'
+- 'sudo add-apt-repository ppa:deadsnakes/ppa'
+- 'sudo apt-get update'
+- 'sudo apt-get install python3.7'
+- 'curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py'
+- 'python get-pip.py --user'
          
 4. [Install Pymakr](https://marketplace.visualstudio.com/items?itemName=pycom.Pymakr "Pymakr")
 
