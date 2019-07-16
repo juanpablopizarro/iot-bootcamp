@@ -86,4 +86,4 @@
                               
 - You will need to log out and log back in again (or reboot) for the user group changes to take effect.
 
-
+¡¡NOW YOU ARE READY FOR THE [LED EXAMPLE](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/examples/Led%20Example/README.md)!!
