@@ -70,3 +70,7 @@
                               'sudo usermod -a -G plugdev $USER'
                               
 - You will need to log out and log back in again (or reboot) for the user group changes to take effect.
+
+- 'sudo apt-get install esptool'
+
+- 'sudo usermod -a -G tty $USER'
