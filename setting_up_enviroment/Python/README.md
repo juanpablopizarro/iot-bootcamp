@@ -45,6 +45,8 @@
 
 - Open Visual Studio Code, press Ctrl+P and write 'ext install ms-python.python' 
 
+![Install_Python](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/images/Python_Install.png)
+
 - From within VS Code, select a Python 3 interpreter by opening the Command Palette (Ctrl+Shift+P), start typing the 'Python: Select Interpreter' command to search, then select the command.
 
 - We will need to install some dependencies, open a bash and write the following commands line by line:
@@ -57,6 +59,8 @@
 4. [Install Micropython IDE for VSC](https://marketplace.visualstudio.com/items?itemName=dphans.micropython-ide-vscode "Micropython IDE")
 
 - Open Visual Studio Code, press Ctrl+P and write 'ext install dphans.micropython-ide-vscode'.
+
+![Install_MicroPython](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/images/Micropython_Install.png)
 
 5. [Install Pymakr](https://marketplace.visualstudio.com/items?itemName=pycom.Pymakr "Pymakr")
 
@@ -76,4 +80,9 @@ prebuild-install --runtime electron --target 4.2.5 --tag-prefix @serialport/bind
 ```
 Reload Visual Studio Code and now Pymakr should work fine.
 
+![Install_Pymakr1](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/images/Pymkr_Install.png)
+
 6. Check for the serial port that is being used: 'dmesg | grep tty'. In my case is /dev/ttyUSB0.
+
+![Ports](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/images/Ports.png)
+
