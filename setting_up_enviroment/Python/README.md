@@ -42,7 +42,29 @@
 - Finally, "insmod cp210x.ko"
 
 3. [Install Micropython IDE for VSC](https://marketplace.visualstudio.com/items?itemName=dphans.micropython-ide-vscode "Micropython IDE")
+
+- Open Visual Studio Code, press Ctrl+P and write 'ext install dphans.micropython-ide-vscode'.
+
+- We will need to install some dependencies:
+
+- Python dependency: 'sudo add-apt-repository ppa:deadsnakes/ppa'
+                     'sudo apt-get update'
+                     'sudo apt-get install python3.7'
+- Pip dependency: 'curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py'
+                  'python get-pip.py --user'
+         
 4. [Install Pymakr](https://marketplace.visualstudio.com/items?itemName=pycom.Pymakr "Pymakr")
+
+- Open Visual Studio Code, press Ctrl+P and write 'ext install pycom.Pymakr' 
+
+- It needs nodejs to be installed. Let's install it: 'sudo apt-get install nodejs'
+
 5. [Python prerequisites](https://code.visualstudio.com/docs/python/python-tutorial#_prerequisites "Python prerequisites")
+
 6. [Install Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python "Python Install")
+
+- Open Visual Studio Code, press Ctrl+P and write 'ext install ms-python.python' 
+
 7. Add user to dialout group: 'sudo usermod -a -G dialout $USER'
+
+8. Check for the serial port that is being used: 'dmesg | grep tty'. In my case is /dev/ttyUSB0.
