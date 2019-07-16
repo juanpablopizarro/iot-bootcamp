@@ -6,6 +6,8 @@ This project works as follows:
 - Second, the LED turns off for 1 second. GPIO 2 set to LOW.
 - The pattern continues until you exit the program.
 
+## Python Instructions
+
 The code in python is as follows:
 ```python
 from machine import Pin
@@ -17,6 +19,7 @@ while True:
 ```
 Save it as "main.py" and upload it to the ESP32 board.
 
+## CPP Instructions
 
 1. Open Visual Studio Code. It will open in the PIO Home.
 
