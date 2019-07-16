@@ -55,7 +55,7 @@
 
 - Connect the board to the usb and check if visual studio code can see the board. If not, continue with the next steps.
 
-- Then write "insmod /lib/modules/<kernel-version/kernel/drivers/usb/serial/usbserial.ko"
+- Then write "insmod /lib/modules/<kernel-version>/kernel/drivers/usb/serial/usbserial.ko"
 
 - Finally, "insmod cp210x.ko"
 
@@ -68,3 +68,5 @@
 - Ubuntu/Debian users may need to add own “username” to the “dialout” group if they are not “root”. 
 - Add user to dialout group: 'sudo usermod -a -G dialout $USER'
                               'sudo usermod -a -G plugdev $USER'
+                              
+- You will need to log out and log back in again (or reboot) for the user group changes to take effect.
