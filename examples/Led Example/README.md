@@ -17,7 +17,17 @@ while True:
 ```
 Save it as "main.py" and upload it to the ESP32 board.
 
-The code in c++ is as follows:
+
+1. Open Visual Studio Code. It will open in the PIO Home.
+
+2. Press on new project. It will open a project wizard.
+
+- Name: Blinking Led
+- Board: DOIT ESP32 DEVKIT V1
+- Framework: Arduino
+
+3. After the project is generated, navigate to the 'main.cpp' file and copy the code.
+
 ```cpp
 #define LED 2
  
@@ -33,3 +43,7 @@ void loop() {
   digitalWrite(LED,LOW);
 }
 ```
+
+4. Press the upload button, it will build and upload the code to the ESP32.
+
+5. Now you should see blinking the onboard led.
