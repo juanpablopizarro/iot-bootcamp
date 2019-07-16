@@ -58,3 +58,5 @@
 - Then write "insmod /lib/modules/<kernel-version/kernel/drivers/usb/serial/usbserial.ko"
 
 - Finally, "insmod cp210x.ko"
+
+4. Add user to dialout group: 'sudo usermod -a -G dialout $USER'
