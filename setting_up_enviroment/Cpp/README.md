@@ -40,3 +40,21 @@
 ![PIO_8](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/images/Install_PIO_8.png)
 
 3. [Install CP2102 Driver](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers "CP2102")
+
+- Download the corresponding linux file and save it.
+
+- Go to the downloaded folder and unzip it.
+
+- Open a bash and navigate to the unziped folder.
+
+- Once in the folder, write "make" and wait for the process to finish. Now you should see more files generated.
+
+- Before the next step, write "uname -r" to display the version of your linux kernel. In my case it is "4.15.0-54-generic".
+
+- Now write: "sudo cp cp210x.ko /lib/modules/<kernel-version>/kernel/drivers/usb/serial". Enter your sudo password.
+
+- Connect the board to the usb and check if visual studio code can see the board. If not, continue with the next steps.
+
+- Then write "insmod /lib/modules/<kernel-version/kernel/drivers/usb/serial/usbserial.ko"
+
+- Finally, "insmod cp210x.ko"
