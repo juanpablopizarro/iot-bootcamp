@@ -38,3 +38,5 @@
 ![PIO_7](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/images/Install_PIO_7.png)
 
 ![PIO_8](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/images/Install_PIO_8.png)
+
+3. [Install CP2102 Driver](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers "CP2102")
