@@ -59,4 +59,12 @@
 
 - Finally, "insmod cp210x.ko"
 
-4. Add user to dialout group: 'sudo usermod -a -G dialout $USER'
+4. Linux users have to install udev rules for PlatformIO supported boards/devices.
+
+- Open a terminal and type 'curl -fsSL https://raw.githubusercontent.com/platformio/platformio-core/master/scripts/99-platformio-udev.rules | sudo tee /etc/udev/rules.d/99-platformio-udev.rules'
+
+- Restart “udev” management tool: 'sudo service udev restart'
+
+- Ubuntu/Debian users may need to add own “username” to the “dialout” group if they are not “root”. 
+- Add user to dialout group: 'sudo usermod -a -G dialout $USER'
+                              'sudo usermod -a -G plugdev $USER'
