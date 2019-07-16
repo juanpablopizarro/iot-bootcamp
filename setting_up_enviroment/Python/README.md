@@ -41,30 +41,39 @@
 
 - Finally, "insmod cp210x.ko"
 
-3. [Install Micropython IDE for VSC](https://marketplace.visualstudio.com/items?itemName=dphans.micropython-ide-vscode "Micropython IDE")
+3. [Install Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python "Python Install")
 
-- Open Visual Studio Code, press Ctrl+P and write 'ext install dphans.micropython-ide-vscode'.
+- Open Visual Studio Code, press Ctrl+P and write 'ext install ms-python.python' 
+
+- From within VS Code, select a Python 3 interpreter by opening the Command Palette (Ctrl+Shift+P), start typing the 'Python: Select Interpreter' command to search, then select the command.
 
 - We will need to install some dependencies, open a bash and write the following commands line by line:
 
 - 'sudo add-apt-repository ppa:deadsnakes/ppa'
 - 'sudo apt-get update'
 - 'sudo apt-get install python3.7'
-- 'curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py'
-- 'python get-pip.py --user'
-         
-4. [Install Pymakr](https://marketplace.visualstudio.com/items?itemName=pycom.Pymakr "Pymakr")
+- 'sudo apt-get install python-pip'
+
+4. [Install Micropython IDE for VSC](https://marketplace.visualstudio.com/items?itemName=dphans.micropython-ide-vscode "Micropython IDE")
+
+- Open Visual Studio Code, press Ctrl+P and write 'ext install dphans.micropython-ide-vscode'.
+
+5. [Install Pymakr](https://marketplace.visualstudio.com/items?itemName=pycom.Pymakr "Pymakr")
 
 - Open Visual Studio Code, press Ctrl+P and write 'ext install pycom.Pymakr' 
 
 - It needs nodejs to be installed. Let's install it: 'sudo apt-get install nodejs'
 
-5. [Install Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python "Python Install")
+- Add user to dialout group: 'sudo usermod -a -G dialout $USER'
 
-- Open Visual Studio Code, press Ctrl+P and write 'ext install ms-python.python' 
+If an error ocurrs during installation, do the following:
 
-- From within VS Code, select a Python 3 interpreter by opening the Command Palette (Ctrl+Shift+P), start typing the 'Python: Select Interpreter' command to search, then select the command.
+```
+npm install -g prebuild-install
+cd %userprofile%\.vscode\extensions\pycom.pymakr-1.1.2
+cd node_modules\@serialport\bindings
+prebuild-install --runtime electron --target 4.2.5 --tag-prefix @serialport/bindings@ --verbose --force
+```
+Reload Visual Studio Code and now Pymakr should work fine.
 
-6. Add user to dialout group: 'sudo usermod -a -G dialout $USER'
-
-7. Check for the serial port that is being used: 'dmesg | grep tty'. In my case is /dev/ttyUSB0.
+6. Check for the serial port that is being used: 'dmesg | grep tty'. In my case is /dev/ttyUSB0.
