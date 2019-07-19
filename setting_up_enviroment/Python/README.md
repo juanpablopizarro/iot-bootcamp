@@ -92,3 +92,5 @@ Now the board will be detected automatically.
 
 ![Ports](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/images/Ports.png)
 
+¡¡NOW YOU ARE READY FOR THE [LED EXAMPLE](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/examples/Led%20Example/README.md)!!
+
