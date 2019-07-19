@@ -31,7 +31,7 @@ while True:
 ```
 Save it as "main.py" and upload it to the ESP32 board.
 
-## CPP Instructions
+## C++ Instructions
 
 1. Open Visual Studio Code. It will open in the PIO Home.
 
