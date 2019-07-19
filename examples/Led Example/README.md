@@ -8,6 +8,18 @@ This project works as follows:
 
 ## Python Instructions
 
+1. Connect your device to an USB port. It will turn on a red light when plugged in.
+
+2. Open Visual Studio Code. If you have done the [Setting up enviroment for python develop](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/setting_up_enviroment/Python/README.md) the board will be autodetected and connected. It will show a python prompt.
+
+3. Go to Micropython button and start a project called "Blinking Led".
+
+4. Check for the serial port that is being used: 'dmesg | grep tty'. In my case is /dev/ttyUSB0.
+
+![Ports](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/images/Ports.png)
+
+When asked for the port enter that name.
+
 The code in python is as follows:
 ```python
 from machine import Pin
