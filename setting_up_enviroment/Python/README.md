@@ -47,14 +47,14 @@
 
 ![Install_Python](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/images/Python_Install.png)
 
-- From within VS Code, select a Python 3 interpreter by opening the Command Palette (Ctrl+Shift+P), start typing the 'Python: Select Interpreter' command to search, then select the command.
-
 - We will need to install some dependencies, open a bash and write the following commands line by line:
 
 - 'sudo add-apt-repository ppa:deadsnakes/ppa'
 - 'sudo apt-get update'
 - 'sudo apt-get install python3.7'
 - 'sudo apt-get install python-pip'
+
+- From within VS Code, select a Python 3 interpreter by opening the Command Palette (Ctrl+Shift+P), start typing the 'Python: Select Interpreter' command to search, then select the command.
 
 4. [Install Micropython IDE for VSC](https://marketplace.visualstudio.com/items?itemName=dphans.micropython-ide-vscode "Micropython IDE")
 
