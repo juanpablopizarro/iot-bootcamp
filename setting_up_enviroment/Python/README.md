@@ -62,6 +62,20 @@
 
 ![Install_MicroPython](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/images/Micropython_Install.png)
 
+Once installed let's install the micropython code for your ESP32:
+
+- Go to Micorpython button and select "Download Firmware". A web page will open with MicroPython downloads. Select the last version stable of ESP32 firmware and download it.
+
+- Then, go to Micropython button again and select "Flash Firmware". When asked for a file, select the recently downloaded .bin file.
+
+- After that select the ESP32 board.
+
+- Check for the serial port that is being used: 'dmesg | grep tty'. In my case is /dev/ttyUSB0.
+
+![Ports](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/images/Ports.png)
+
+When asked for the port enter that name and baud rate 115200.
+
 5. [Install Pymakr](https://marketplace.visualstudio.com/items?itemName=pycom.Pymakr "Pymakr")
 
 - Open Visual Studio Code, press Ctrl+P and write 'ext install pycom.Pymakr' 
