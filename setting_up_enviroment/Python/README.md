@@ -88,9 +88,5 @@ After successfuly installing Pymakr, add "Silicon Labs" to the pymakr.json file.
 
 Now the board will be detected automatically.
 
-6. Check for the serial port that is being used: 'dmesg | grep tty'. In my case is /dev/ttyUSB0.
-
-![Ports](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/images/Ports.png)
-
 ¡¡NOW YOU ARE READY FOR THE [LED EXAMPLE](https://github.com/juanpablopizarro/iot-bootcamp/blob/develop/examples/Led%20Example/README.md)!!
 
