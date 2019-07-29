@@ -74,3 +74,7 @@ void loop() {
 ```
 
 Upload the code to the ESP32, you should be able to control the LED brightness by rotating the potentiometer and read the reading from the potentiometer on the shell.
+
+The same signal of the led pin can be used with a dc motor. Except that a motor driver is neeeded and an additional power source. Just connect a 5v power to the driver, on the exit of the driver motor connect the dc motor and the output signal of the ESP32 connect it to the input of the motor driver.
+
+Then you should be able to regulate the motor speed by the ADC pot.
