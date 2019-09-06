@@ -49,6 +49,8 @@ while True:
 3. After the project is generated, navigate to the 'main.cpp' file and copy the code.
 
 ```cpp
+#include "Arduino.h"
+
 #define LED 2
  
 void setup() {
