@@ -42,6 +42,7 @@ while True:
 The code in c++ is as follows:
 
 ```cpp
+#include "Arduino.h"
 #include <driver/adc.h>
 
 // the number of the LED pin
