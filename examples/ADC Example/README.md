@@ -44,6 +44,7 @@ The bit argument can be one of the following parameters:
 
 The code in c++ is as follows:
 ```cpp
+#include "Arduino.h"
 #include <driver/adc.h>
 
 void setup() {
