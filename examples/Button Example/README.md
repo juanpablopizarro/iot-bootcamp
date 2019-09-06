@@ -26,6 +26,8 @@ Save it as "main.py" and upload it to the ESP32 board.
 The code in c++ is as follows:
 
 ```cpp
+#include "Arduino.h"
+
 #define LED 5
 #define BUTTON 4
 
